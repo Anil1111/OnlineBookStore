@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Cover2Cover.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+}
+
+<table>
+    @foreach (var customer in Model)
+    {
+    <tr>
+        <td>@customer.Name</td>
+    </tr>
+    }
+</table>
+
