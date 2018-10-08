@@ -206,6 +206,22 @@
     <Compile Include="Migrations\201810062155593_InitialModel.Designer.cs">
       <DependentUpon>201810062155593_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810081848548_editingModels.cs" />
+    <Compile Include="Migrations\201810081848548_editingModels.Designer.cs">
+      <DependentUpon>201810081848548_editingModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810081859290_revertingLastMigration.cs" />
+    <Compile Include="Migrations\201810081859290_revertingLastMigration.Designer.cs">
+      <DependentUpon>201810081859290_revertingLastMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810081912540_re-editingModels.cs" />
+    <Compile Include="Migrations\201810081912540_re-editingModels.Designer.cs">
+      <DependentUpon>201810081912540_re-editingModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810081920288_AddingFavBookListToCustomer.cs" />
+    <Compile Include="Migrations\201810081920288_AddingFavBookListToCustomer.Designer.cs">
+      <DependentUpon>201810081920288_AddingFavBookListToCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Identity Models\AccountViewModels.cs" />
@@ -284,6 +300,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -297,6 +314,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201810062155593_InitialModel.resx">
       <DependentUpon>201810062155593_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810081848548_editingModels.resx">
+      <DependentUpon>201810081848548_editingModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810081859290_revertingLastMigration.resx">
+      <DependentUpon>201810081859290_revertingLastMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810081912540_re-editingModels.resx">
+      <DependentUpon>201810081912540_re-editingModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810081920288_AddingFavBookListToCustomer.resx">
+      <DependentUpon>201810081920288_AddingFavBookListToCustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

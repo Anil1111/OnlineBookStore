@@ -24,5 +24,19 @@ namespace Cover2Cover.Controllers
             var customers = _context.Customers;
             return View(customers);
         }
+        // GET : customers/details/id
+        public ActionResult Details(int Id)
+        {
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == Id);
+            if (customer!=null)
+            {
+                return View(customer);
+            }
+            else
+            {
+                return HttpNotFound();
+            }
+            
+        }
     }
 }

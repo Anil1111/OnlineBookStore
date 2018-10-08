@@ -1,13 +1,18 @@
 ﻿@model IEnumerable<Cover2Cover.Models.Customer>
 @{
     ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
 }
 
-<table>
+<h2>
+    Customers
+</h2>
+<table class="table table-light` table-hover">
     @foreach (var customer in Model)
     {
     <tr>
-        <td>@customer.Name</td>
+        <td>@Html.ActionLink(customer.Name,"Details","Customers",new { id = customer.Id},null)</td>
     </tr>
     }
 </table>
