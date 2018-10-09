@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Cover2Cover.Models.Book>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Our Books</h2>
+<br />
+<ul>
+
+    @foreach (var book in Model)
+    {
+        <li>
+            <h4>@Html.ActionLink(book.Name, "Details", "Books", new { id = book.Id }, null)</h4>
+            <text>By @Html.ActionLink(book.Author.Name, "Details", "Authors", new { id = book.AuthorId }, null)</text>
+        </li>
+
+    }
+</ul>

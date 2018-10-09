@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Cover2Cover.Models.Author>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Authors</h2>
+<br />
+<table class="table table-light` table-hover">
+    <thead>
+        <tr>
+            <th>Author</th>
+            <th>Books</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var author in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(author.Name, "Details", "Authors", new { id = author.AuthorId}, null)</td>
+                <td><ul>
+                    @foreach (var book in author.Books.ToList())
+                    {
+                       <li>@Html.ActionLink(book.Name,"Details","Books", new { id = book.Id},null)</li>
+                    }
+                    </ul></td>
+            </tr>
+        }
+    </tbody>
+</table>
+

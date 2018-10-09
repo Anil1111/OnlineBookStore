@@ -1,0 +1,10 @@
+﻿@model Cover2Cover.Models.Book
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Name by @Html.ActionLink(Model.Author.Name, "Details", "Authors", new { id = Model.AuthorId }, null)</h2>
+<br />
+<h4>@Model.Info</h4>
+
