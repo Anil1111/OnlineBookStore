@@ -1,6 +1,7 @@
 ﻿using Cover2Cover.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -21,7 +22,7 @@ namespace Cover2Cover.Controllers
         // GET: Customers
         public ActionResult Index()
         {
-            var customers = _context.Customers;
+            var customers = _context.Customers.Include(i => i.Membership).ToList();
             return View(customers);
         }
         // GET : customers/details/id

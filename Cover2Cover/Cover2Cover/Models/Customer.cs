@@ -12,9 +12,9 @@ namespace Cover2Cover.Models
         public bool HasAMembership { get; set; }
         public MembershipType Membership { get; set; }
         public int MembershipId { get; set; }
-        public List<Book> PurchasedBooks { get; set; }
-        public List<Book> FavouriteBooks { get; set; }
-        public List<Author> FavouriteAuthors { get; set; }
+        public List<int> PurchasedBooks { get; set; }
+        public List<int> FavouriteBooks { get; set; }
+        public List<int> FavouriteAuthors { get; set; }
 
     }
 }

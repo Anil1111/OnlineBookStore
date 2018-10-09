@@ -86,3 +86,5 @@ D:\Projects\OnlineBookStore\Cover2Cover\Cover2Cover\obj\Debug\Cover2Cover.Migrat
 D:\Projects\OnlineBookStore\Cover2Cover\Cover2Cover\obj\Debug\Cover2Cover.Migrations.editingfavouriteBooksForiegnKeyName.resources
 D:\Projects\OnlineBookStore\Cover2Cover\Cover2Cover\obj\Debug\Cover2Cover.Migrations.reeditingModels.resources
 D:\Projects\OnlineBookStore\Cover2Cover\Cover2Cover\obj\Debug\Cover2Cover.Migrations.AddingFavBookListToCustomer.resources
+D:\Projects\OnlineBookStore\Cover2Cover\Cover2Cover\obj\Debug\Cover2Cover.Migrations.EditingModelsBooksAndCustomer.resources
+D:\Projects\OnlineBookStore\Cover2Cover\Cover2Cover\obj\Debug\Cover2Cover.Migrations.EditingBookAndAuthorModels.resources

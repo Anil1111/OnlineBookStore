@@ -222,12 +222,20 @@
     <Compile Include="Migrations\201810081920288_AddingFavBookListToCustomer.Designer.cs">
       <DependentUpon>201810081920288_AddingFavBookListToCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810090546145_EditingModelsBooksAndCustomer.cs" />
+    <Compile Include="Migrations\201810090546145_EditingModelsBooksAndCustomer.Designer.cs">
+      <DependentUpon>201810090546145_EditingModelsBooksAndCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810090635105_EditingBookAndAuthorModels.cs" />
+    <Compile Include="Migrations\201810090635105_EditingBookAndAuthorModels.Designer.cs">
+      <DependentUpon>201810090635105_EditingBookAndAuthorModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Identity Models\AccountViewModels.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
-    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\BookCategory.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Identity Models\IdentityModels.cs" />
     <Compile Include="Models\Identity Models\ManageViewModels.cs" />
@@ -326,6 +334,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810081920288_AddingFavBookListToCustomer.resx">
       <DependentUpon>201810081920288_AddingFavBookListToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810090546145_EditingModelsBooksAndCustomer.resx">
+      <DependentUpon>201810090546145_EditingModelsBooksAndCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810090635105_EditingBookAndAuthorModels.resx">
+      <DependentUpon>201810090635105_EditingBookAndAuthorModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

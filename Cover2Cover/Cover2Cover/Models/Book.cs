@@ -9,11 +9,11 @@ namespace Cover2Cover.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Category? Category { get; set; }
-        public DateTime ReleaseDate { get; set; }
+        public BookCategory? Category { get; set; }
+        public string Info { get; set; }
         public Author Author { get; set; }
         public int? AuthorId { get; set; }
-        public List<Customer> PurchasedBy { get; set; }
+        public List<int> PurchasedBy { get; set; }
 
     }
 }
